@@ -11,6 +11,9 @@
         
 }
 
+/* center{
+    text-align: center;
+} */
 
 .box{
     box-shadow: 0px 0px 10px gray;
@@ -61,3 +64,16 @@
 
 }
 
+.line{
+    border-right: 1px solid black;
+}
+
+.dec a{
+    text-decoration: none;
+    color: black;
+}
+
+/* .Apartments-bdr{
+    border: 12px solid rgba(127, 255, 212,0.3);
+    border-radius: 15px;
+} */
