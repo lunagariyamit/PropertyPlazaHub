@@ -3,7 +3,9 @@
     background-color: rgb(243, 243, 243);
     /* margin-left: 15px; */
 }
-
+.bold{
+    font-size: 30px;
+}
 .Properties:hover{
     background-color: rgb(127, 255, 212);
     /* color: rgb(0, 0, 0); */
@@ -11,6 +13,17 @@
         
 }
 
+.ok{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(2, 105, 71);;
+}
+
+.b1{
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+}
 /* center{
     text-align: center;
 } */
