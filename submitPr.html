@@ -89,7 +89,7 @@
 
     <!-- Navbar End -->
 
-    <h1 class="text-center mt-5">Submit Property</h1>
+    <h1 class="text-center mt-5" style="color: green;">Submit Property</h1>
 
 
 
@@ -113,27 +113,31 @@
                         <label for="cars"><b>Status</b></label> <br>
                         <select id="cars" name="carlist" form="carform" class="p-5 pt-2 pb-2">
                             <option value="Status">Select Status</option>
-                            <option value="saab">Saab</option>
-                            <option value="opel">Opel</option>
-                            <option value="audi">Audi</option>
+                            <option value="saab">Classic</option>
+                            <option value="opel">Luxurius</option>
+                            <option value="audi">Midium</option>
                         </select>
                     </div>
                     <div class="col-lg-4">
                         <label for="cars"><b>Type</b></label> <br>
                         <select id="cars" name="carlist" form="carform" class="p-5 pt-2 pb-2">
                             <option value="Status">Select Status</option>
-                            <option value="saab">Saab</option>
-                            <option value="opel">Opel</option>
-                            <option value="audi">Audi</option>
+                            <option value="saab">Villa</option>
+                            <option value="opel">Apartment</option>
+                            <option value="audi">Office</option>
+                            <option value="audi">Shop</option>
+                            <option value="audi">Township</option>
                         </select>
                     </div>
                     <div class="col-lg-4">
                         <label for="Rooms"><b>Rooms</b></label> <br>
                         <select id="Rooms" name="Roomslist" form="Roomsform" class="p-5 pt-2 pb-2">
-                            <option value="Status">Select Status</option>
-                            <option value="saab">Saab</option>
-                            <option value="opel">Opel</option>
-                            <option value="audi">Audi</option>
+                            <option value="Status">Select Rooms</option>
+                            <option value="saab">1 bhk</option>
+                            <option value="saab">2 bhk</option>
+                            <option value="opel">3 bhk</option>
+                            <option value="audi">4 bhk</option>
+                            <option value="audi">5 bhk</option>
                         </select>
                     </div>
                 </div>
@@ -191,6 +195,21 @@
     </div>
 
 
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mb-5 mt-5 ">
+                <h3 class="text-success border-bottom border-3 pb-3">File upload</h3>
+            </div>
+            <div class="col-lg-12 text-center border border-3 p-3">
+                <i class="fa-solid fa-file-arrow-up" style="font-size: 50px;"></i><br>
+               <input type="file" name="file" id="file">
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div class="row">
             <div class="col-lg-12 mb-5 mt-5">
@@ -200,9 +219,9 @@
                 <label for="cars"><b>Biulding Age</b>(Optional)</label> <br>
                 <select id="cars" name="carlist" form="carform" class=" pt-2 pb-2 w-100">
                     <option value="Status">Select Age</option>
-                    <option value="saab">1</option>
-                    <option value="opel">2</option>
-                    <option value="audi">3</option>
+                    <option value="saab">1 year</option>
+                    <option value="opel">2 year</option>
+                    <option value="audi">3 year & Above</option>
                 </select>
             </div>
             <div class="col-lg-4">
@@ -211,7 +230,7 @@
                     <option value="Status">Select BedRooms</option>
                     <option value="saab">1</option>
                     <option value="opel">2</option>
-                    <option value="audi">3</option>
+                    <option value="audi">3 & Above</option>
                 </select>
             </div>
             <div class="col-lg-4">
@@ -220,7 +239,7 @@
                     <option value="Status">Select BathRooms</option>
                     <option value="saab">1</option>
                     <option value="opel">2</option>
-                    <option value="audi">3</option>
+                    <option value="audi">3 & Above</option>
                 </select>
             </div>
         </div>
@@ -296,11 +315,6 @@
     </div>
 
 
-
-
-
-
-
     
     <!-- Footer start -->
 
@@ -311,7 +325,7 @@
                     <h4 class="mb-4">Get In Touch</h4>
                     <p class="mb-2"><i class="fa-solid fa-location-dot me-3"></i>123 Street, New York, USA</p>
                     <p class="mb-2"><i class="fa-solid fa-phone me-3"></i>+91 8460819070</p>
-                    <p class="mb-2"><i class="fa-solid fa-envelope me-3"></i>propertyhub.gmail.com</p>
+                    <p class="mb-2"><i class="fa-solid fa-envelope me-3"></i>propertyhub@gmail.com</p>
                     <div class="pt-3">
                         <a href="https://twitter.com/i/flow/login" class="btn btn-outline-light ro me-2"><i class="fa-brands fa-twitter"></i></a>
                         <a href="https://www.facebook.com/" class="btn btn-outline-light ro me-2"><i class="fa-brands fa-facebook-f"></i></a>
@@ -381,9 +395,10 @@
 
 
         <div class="row border-top pt-4 m-4">
-
-
-            <div class="col-lg-6  col-xl-6 col-12  mt-3 mt-md-0 mt-lg-0">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <a class="border-bottom" href="#" style="color: white;">@ Property Plaza Hub</a>
+            </div>
+            <div class="col-lg-6  col-xl-6 col-12  mt-3 mt-md-0 mt-lg-0 ">
                 <div class="d-flex justify-content-end">
                     <p class="ms-4 border-end pe-2">Home</p>
                     <p class="ms-4 border-end pe-2">Cookies</p>
@@ -403,6 +418,6 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
-</body>
 
+</body>
 </html>
