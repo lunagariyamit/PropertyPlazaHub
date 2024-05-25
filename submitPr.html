@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./home2.css">
+
+
+</head>
+
+<body>
+
+
+    <!-- Navbar Start -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+
+                    <a href="#" class="navbar-brand d-flex align-items-center">
+                        <div class="icon p-2 me-2">
+                            <img class="img-fluid" src="./photo/img3.png" alt="img" style="width: 30px; height: 30px;">
+                        </div>
+                        <h1 class="m-0 text-success">Property Plaza Hub</h1>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-success" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Property
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="Property List.html">Property List</a></li>
+                                    <li><a class="dropdown-item" href="Property Type.html">Property Type</a></li>
+                                    <li><a class="dropdown-item" href="Property Agent.html">Property Agent</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="Testimonial.html">Testimonial</a></li>
+                                    <li><a class="dropdown-item" href="#">404 Error</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" aria-disabled="true" href="Contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <button class="btn me-3 btn-success " type="submit"><a href="./login.html"
+                                    style="color: white; text-decoration: none;">Login</a></button>
+                            <button class="btn btn-success " type="submit">submit property</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- Navbar End -->
+
+    <h1 class="text-center mt-5">Submit Property</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mt-5">
+                <h3 class="text-success border-bottom border-3 pb-3">Property description And Price</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <form id="form" method="post" onsubmit="handleSubmit(event)">
+
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-lg-12 mt-5">
+                    <h3 class="text-success border-bottom border-3 pb-3">Property description And Price</h3>
+                </div> -->
+                <div class="col-lg-12 mt-3">
+                    <label for="title"><b>Property Title</b></label>
+                    <input type="text" name="title" id="title" class="w-100 mt-2">
+                </div>
+                <div class="col-lg-12 mt-3">
+                    <label for="Description"><b>Property Description</b></label><br>
+                    <textarea name="Description" id="Description" cols="20" rows="7" class="mt-2 w-100"></textarea>
+                </div>
+                <div class="col-lg-12  mt-3">
+                    <div class="row text-center">
+                        <div class="col-lg-4">
+                            <label for="cars"><b>Status</b></label> <br>
+                            <select id="cars" name="carlist" form="carform" class="p-5 pt-2 pb-2">
+                                <option value="Status">Select Status</option>
+                                <option value="saab">Classic</option>
+                                <option value="opel">Luxurius</option>
+                                <option value="audi">Midium</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="cars"><b>Type</b></label> <br>
+                            <select id="cars" name="carlist" form="carform" class="p-5 pt-2 pb-2">
+                                <option value="Status">Select Status</option>
+                                <option value="saab">Villa</option>
+                                <option value="opel">Apartment</option>
+                                <option value="audi">Office</option>
+                                <option value="audi">Shop</option>
+                                <option value="audi">Township</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="Rooms"><b>Rooms</b></label> <br>
+                            <select id="Rooms" name="Roomslist" form="Roomsform" class="p-5 pt-2 pb-2">
+                                <option value="Status">Select Rooms</option>
+                                <option value="saab">1 bhk</option>
+                                <option value="saab">2 bhk</option>
+                                <option value="opel">3 bhk</option>
+                                <option value="audi">4 bhk</option>
+                                <option value="audi">5 bhk</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6 mt-3">
+                            <label for="price"><b>price</b></label><br>
+                            <input type="text" id="price" name="price" placeholder="USD" class="w-100 text">
+                        </div>
+                        <div class="col-lg-6 mt-3">
+                            <label for="Aria"><b>Aria</b></label><br>
+                            <input type="text" id="Aria" name="Aria" placeholder="SQFT" class="w-100">
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <div class="container mt-5 ">
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h3 class="text-success border-bottom border-3 pb-3">Property Media</h3>
+                </div>
+                <div class="row p-5">
+                    <div class="col-lg-6 mt-3">
+                        <label for="Address"><b>Address</b></label><br>
+                        <input type="text" id="Address" name="Address" placeholder="Enter your Address" class="w-100">
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                        <label for="City"><b>City</b></label><br>
+                        <input type="text" id="City" name="City" placeholder="Enter your City" class="w-100">
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                        <label for="State"><b>State</b></label><br>
+                        <input type="text" id="State" name="State" placeholder="Enter your State" class="w-100">
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                        <label for="Country"><b>Country</b></label><br>
+                        <input type="text" id="Country" name="Country" placeholder="Enter your Country" class="w-100">
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                        <label for="Latitude"><b>Google Maps Latitude</b></label><br>
+                        <input type="text" id="Latitude" name="Latitude" placeholder="Google Maps Latitude"
+                            class="w-100">
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                        <label for="Longitude"><b>Google Maps Longitude</b></label><br>
+                        <input type="text" id="Longitude" name="Longitude" placeholder="Google Maps Longitude"
+                            class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mb-5 mt-5 ">
+                    <h3 class="text-success border-bottom border-3 pb-3">File upload</h3>
+                </div>
+                <div class="col-lg-12 text-center border border-3 p-3">
+                    <i class="fa-solid fa-file-arrow-up" style="font-size: 50px;"></i><br>
+                    <input type="file" name="file" id="file">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mb-5 mt-5">
+                    <h3 class="text-success border-bottom border-3 pb-3">Extra Information</h3>
+                </div>
+                <div class="col-lg-4">
+                    <label for="cars"><b>Biulding Age</b>(Optional)</label> <br>
+                    <select id="cars" name="carlist" form="carform" class=" pt-2 pb-2 w-100">
+                        <option value="Status">Select Age</option>
+                        <option value="saab">1 year</option>
+                        <option value="opel">2 year</option>
+                        <option value="audi">3 year & Above</option>
+                    </select>
+                </div>
+                <div class="col-lg-4">
+                    <label for="cars"><b>BedRooms</b>(Optional)</label> <br>
+                    <select id="cars" name="carlist" form="carform" class=" pt-2 pb-2 w-100">
+                        <option value="Status">Select BedRooms</option>
+                        <option value="saab">1</option>
+                        <option value="opel">2</option>
+                        <option value="audi">3 & Above</option>
+                    </select>
+                </div>
+                <div class="col-lg-4">
+                    <label for="Rooms"><b>BathRooms</b>(Optional)</label> <br>
+                    <select id="Rooms" name="Roomslist" form="Roomsform" class="pt-2 pb-2 w-100">
+                        <option value="Status">Select BathRooms</option>
+                        <option value="saab">1</option>
+                        <option value="opel">2</option>
+                        <option value="audi">3 & Above</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-12 mt-5">
+                    <h3 class="text-success border-bottom border-3 pb-3">Property Features</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" class="ms-lg-5">
+                        <label for="vehicle1">Air conditioner</label>
+
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" class="ms-lg-5">
+                        <label for="vehicle2">Swiming pool</label>
+
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" class="ms-lg-5">
+                        <label for="vehicle3">center heating</label>
+
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" class="ms-lg-5">
+                        <label for="vehicle2">Laundry room</label>
+
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" class="ms-lg-5">
+                        <label for="vehicle3">Gym</label>
+
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" class="ms-lg-5">
+                        <label for="vehicle2">Alarm</label>
+
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" class="ms-lg-5">
+                        <label for="vehicle3">Window covering</label>
+
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" class="ms-lg-5">
+                        <label for="vehicle2">Refrigerator</label>
+
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" class="ms-lg-5">
+                        <label for="vehicle3">TV cable & WIFI</label>
+                        
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" class="ms-lg-5">
+                        <label for="vehicle2">Microwave</label>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-12 mt-5">
+                    <h3 class="text-success border-bottom border-3 pb-3">Contact Information</h3>
+                </div>
+                <div class="row p-5">
+                    <div class="col-lg-6 mt-3">
+                        <label for="name"><b>Name</b></label><br>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" class="w-100">
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                        <label for="Username"><b>Username</b></label><br>
+                        <input type="text" id="Username" name="Username" placeholder="Enter your Username"
+                            class="w-100">
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                        <label for="email"><b>Email</b></label><br>
+                        <input type="text" id="email" name="email" placeholder="Enter your Email" class="w-100">
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                        <label for="Phone"><b>Phone - Number</b></label><br>
+                        <input type="text" id="Phone" name="Phone" placeholder="Enter your Phone" class="w-100">
+                    </div>
+                    <div class="col-lg-12 text-center mt-5 ">
+                        <a href="#" type="button" class="bg-success px-4 py-2 rounded"
+                            style="text-decoration: none; color: white;">Submit property</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+
+    <!-- Form end  -->
+
+
+    
+
+
+
+    <!-- Footer start -->
+
+    <div class="container-fluid mt-5 text-white pt-5 vv">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3 col-xl-3 col-md-6">
+                    <h4 class="mb-4">Get In Touch</h4>
+                    <p class="mb-2"><i class="fa-solid fa-location-dot me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa-solid fa-phone me-3"></i>+91 8460819070</p>
+                    <p class="mb-2"><i class="fa-solid fa-envelope me-3"></i>propertyhub.gmail.com</p>
+                    <div class="pt-3">
+                        <a href="https://twitter.com/i/flow/login" class="btn btn-outline-light ro me-2"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/" class="btn btn-outline-light ro me-2"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/watch?v=FNsCWDip8lg" class="btn btn-outline-light ro me-2"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="https://in.linkedin.com/" class="btn btn-outline-light ro me-2"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-xl-3 col-md-6 mt-5 mt-md-0 mt-lg-0">
+                    <h4 class="mb-4 ">Quick Links</h4>
+                    <p class="mb-2"> <span class="fw-bold"> > </span><a href="./about.html"
+                            class="text-white text-decoration-none">About Us</a></p>
+                    <p class="mb-2"> <span class="fw-bold"> > </span><a href="./Contact.html"
+                            class="text-white text-decoration-none">Contact Us</a></p>
+                    <p class="mb-2"> <span class="fw-bold"> > </span><a href="#"
+                            class="text-white text-decoration-none">Our Services </a></p>
+                    <p class="mb-2"> <span class="fw-bold"> > </span><a href="#"
+                            class="text-white text-decoration-none">Privacy Policy</a></p>
+                    <p class="mb-2"> <span class="fw-bold"> > </span><a href="#"
+                            class="text-white text-decoration-none">terms & condition</a></p>
+                </div>
+
+                <div class="col-lg-3 col-xl-3 col-md-6  mt-5 mt-lg-0">
+                    <h4 class="mb-4">Photo Gallery</h4>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="./photo/img13.jpg" alt="img" class="img-fluid rounded nn">
+                        </div>
+
+                        <div class="col-4">
+                            <img src="./photo/img14.jpg" alt="img" class="img-fluid rounded nn">
+                        </div>
+
+                        <div class="col-4">
+                            <img src="./photo/img15.jpg" alt="img" class="img-fluid rounded nn">
+                        </div>
+
+                        <div class="col-4 mt-3">
+                            <img src="./photo/img16.jpg" alt="img" class="img-fluid rounded nn">
+                        </div>
+
+                        <div class="col-4 mt-3">
+                            <img src="./photo/img17.jpg" alt="img" class="img-fluid rounded nn">
+                        </div>
+
+                        <div class="col-4 mt-3">
+                            <img src="./photo/img18.jpg" alt="img" class="img-fluid rounded nn">
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-xl-3 col-md-6  mt-5  mt-lg-0">
+                    <h4 class="mb-4">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative">
+                        <input class="form-control bg-transparent py-3 ps-4 text-white" type="email" name="email"
+                            value="Your Email">
+                        <button class="btn btn-success py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="row border-top pt-4 m-4">
+
+
+            <div class="col-lg-6  col-xl-6 col-12  mt-3 mt-md-0 mt-lg-0">
+                <div class="d-flex justify-content-end">
+                    <p class="ms-4 border-end pe-2">Home</p>
+                    <p class="ms-4 border-end pe-2">Cookies</p>
+                    <p class="ms-4 border-end pe-2">Help</p>
+                    <p class="ms-4">FQAS</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Footer End -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
